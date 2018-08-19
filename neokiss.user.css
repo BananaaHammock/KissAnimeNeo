@@ -1,6 +1,6 @@
 /* ==Userstyle==
-@name           neokiss
-@namespace      github.com/bananaahammock/neokiss
+@name           Kissneo
+@namespace      github.com/bananaahammock/kissneo
 @version        0.0.1
 @description    kissanime/kissmanga userstyle
 @author         bananaahammock
@@ -65,7 +65,7 @@ domain("kissmanga.com") {
     
     #head h1
 	{
-	    background: no-repeat url("https://raw.githubusercontent.com/BananaaHammock/KissAnimeNeo/master/header.jpg") center !important;
+	    background: no-repeat url("https://raw.githubusercontent.com/BananaaHammock/kissneo/master/header.jpg") center !important;
 		background-size: cover !important;
 		width: 100% !important;
         height: 200px !important;
@@ -78,7 +78,7 @@ domain("kissmanga.com") {
 	}
 
     #head h1 a.logo {
-        background: no-repeat url("https://raw.githubusercontent.com/BananaaHammock/KissAnimeNeo/master/logo.png") center !important;
+        background: no-repeat url("https://raw.githubusercontent.com/BananaaHammock/kissneo/master/logo.png") center !important;
         width: 80% !important;
         height: 100% !important;
         margin-top: 0px !important;
