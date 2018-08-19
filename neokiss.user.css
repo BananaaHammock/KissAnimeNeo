@@ -1,9 +1,9 @@
 /* ==Userstyle==
 @name           neokiss
-@namespace      github.com/bananahammock/neokiss
+@namespace      github.com/bananaahammock/neokiss
 @version        0.0.1
 @description    kissanime/kissmanga userstyle
-@author         bananahammock
+@author         bananaahammock
 ==/UserStyle== */
 
 @-moz-document domain("kissanime.ru"),
@@ -13,6 +13,7 @@ domain("kissmanga.com") {
 		--background: #232A34 !important;
 		--background2: #29313D !important;
 		--primary-color: #A366AF !important;
+        --secondary-color: #28C6EA !important;
 		--text: #E0E0E0 !important;
 		--invert: invert(0) !important;
         
@@ -46,17 +47,14 @@ domain("kissmanga.com") {
 	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds, #divAds1, #divAds2, #divFloatRight, #adsIfrme6,                   
     div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, 
     #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"], div[class^="#ads-"], 
-    div[class*=" #ads-"], [class^="#ads-"], [class*=" #ads-"],
+    div[class*=" #ads-"], [class^="#ads-"], [class*=" #ads-"], .arrow-general,
 	a[href*="bebi"],
 	[style*="visibility: visible; height:768px; width: 336px; position:absolute;"],
 	[style*="width: 100%; height: 768px; position: fixed;"],
-	[style*="width:100%;height:768px;position:fixed;left:0"] {
+	[style*="width:100%;height:768px;position:fixed;left:0"],
+    [style*="position: absolute; left: 50%;"] {
 		display: none !important;
 	}
-    
-    #tab-trending > div:nth-child(2) {
-        display: none !important;
-    }
 
 	#footer
 	{
@@ -67,23 +65,20 @@ domain("kissmanga.com") {
     
     #head h1
 	{
-	    background: no-repeat url("https://i.imgur.com/gTGC3lu.jpg") center !important;
+	    background: no-repeat url("https://raw.githubusercontent.com/BananaaHammock/KissAnimeNeo/master/header.jpg") center !important;
 		background-size: cover !important;
 		width: 100% !important;
         height: 200px !important;
-        z-index: 999 !important;
         position: absolute !important;
         left: 0px !important;
-        border-top: 3px solid transparent;
-        -moz-border-image: -moz-linear-gradient(315deg, #B648FF, #5CD1F7) center !important;
-        -webkit-border-image: -webkit-linear-gradient(315deg, #B648FF, #5CD1F7) center !important;
+        top: -10px !important;
+        border-top: 3px solid transparent !important;
         border-image: linear-gradient(315deg, #B648FF, #5CD1F7);
         border-image-slice: 1;
 	}
 
-    
     #head h1 a.logo {
-        background: no-repeat url("https://i.imgur.com/2xpe5Kg.png") center !important;
+        background: no-repeat url("https://raw.githubusercontent.com/BananaaHammock/KissAnimeNeo/master/logo.png") center !important;
         width: 80% !important;
         height: 100% !important;
         margin-top: 0px !important;
@@ -91,10 +86,67 @@ domain("kissmanga.com") {
     }
     
     #navbar {
-        background: no-repeat url("https://i.imgur.com/lMunmdM.png") left !important;
-        background-size: cover !important;
-        width: 10% !important;
-        left: 0px
+        background: transparent !important;
     }
+
+    #navcontainer {
+        display: none !important;
+    }
+
+    #navsubbar {
+        background: var(--background2) !important;
+        padding: 15px 0px !important;
+        position: absolute !important;
+        margin-top: 77px !important;
+        height: 10px !important;
+    }
+
+    #navsubbar p {
+        color: transparent !important;
+        background-color: var(--background2)
+    }
+
+    #navsubbar p a {
+        font-size: 12pt !important;
+        font-weight: 300;
+        color: var(--secondary-color) !important;
+        line-height: 15pt !important;
+        max-width: 40% !important;
+        overflow: hidden
+    }
+
+    #navsubbar p a:nth-of-type(1) {
+        position: absolute !important;
+        left: 16px !important;
+    }
+
+    #navsubbar p a:nth-of-type(2) {
+        position: absolute !important;
+        left: 140px !important;
+    }
+
+    #navsubbar p a:nth-of-type(3) {
+        position: absolute !important;
+        left: 280px !important;
+        }
+
+    #navsubbar p a:nth-of-type(4) {
+        position: absolute !important;
+        left: 410px !important;
+    }
+
+    #navsubbar p a:nth-of-type(5) {
+        position: absolute !important;
+        left: 540px !important;
+    }
+
+	#search {
+
+		/*** SEARCHBAR ***/
+		position: absolute !important;
+		top: 200px !important;
+		right: 16px !important;
+		z-index: 999 !important;
+	}
 
 }
