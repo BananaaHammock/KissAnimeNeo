@@ -2,7 +2,7 @@
 @name           Kissneo
 @namespace      github.com/bananaahammock/kissneo
 @version        0.0.1
-@description    kissanime/kissmanga userstyle
+@description    A Dark Kiss Anime UserStyle
 @author         bananaahammock
 ==/UserStyle== */
 
@@ -46,12 +46,13 @@ domain("kissmanga.com") {
 
 	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds, #divAds1, #divAds2, #divFloatRight, #adsIfrme6,                   
     div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, 
-    #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"], div[class^="#ads-"], 
+    #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, #switch > img:nth-child(1), .videoAdClose, [id*="BB_S"], div[class^="#ads-"], 
     div[class*=" #ads-"], [class^="#ads-"], [class*=" #ads-"], .arrow-general,
 	a[href*="bebi"],
 	[style*="visibility: visible; height:768px; width: 336px; position:absolute;"],
 	[style*="width: 100%; height: 768px; position: fixed;"],
 	[style*="width:100%;height:768px;position:fixed;left:0"],
+    [style*="margin: 10px 48px 10px 0"],
     [style*="position: absolute; left: 50%;"] {
 		display: none !important;
 	}
@@ -85,7 +86,7 @@ domain("kissmanga.com") {
         margin-left: 20px !important;
     }
     
-    #navbar {
+   #navbar {
         background: transparent !important;
     }
 
@@ -141,12 +142,112 @@ domain("kissmanga.com") {
     }
 
 	#search {
-
-		/*** SEARCHBAR ***/
 		position: absolute !important;
 		top: 200px !important;
 		right: 16px !important;
 		z-index: 999 !important;
 	}
 
+    #search a[href="http://kissanime.ru/AdvanceSearch"] {
+        display: none !important;
+    }
+    
+    #keyword {
+        width: 200px !important;
+    }
+    
+    #result_box a span, #formSearch > div:nth-child(4) > a:nth-child(1):hover {
+        color: var(--background) !important;
+    }
+    
+    #formSearch > div:nth-child(4) > a:nth-child(1) {
+        color: var(--secondary-color) !important;
+    }
+    
+    input.text, .txtSignUp {
+        margin: 0px !important;
+        color: var(--secondary-color) !important;
+        background: var(--background2) !important;
+        
+    }
+	input.text:focus, input.text:active, input.text:hover, .txtSignUp:hover, .txtSignUp:active, .txtSignUp:focus
+	{
+		border: 1px solid var(--primary-color) !important;
+	}
+    
+    #result_box {
+        margin-top: 10px !important;
+        margin-left: 145px !important;
+        opacity: 1 !important;
+        width: 198px !important;
+        overflow: hidden !important;
+        background: var(--background) !important;
+    }
+    
+    #result_box a {
+        position: static !important;
+    }
+    
+    #result_box a:hover {
+        background: var(--secondary-color) !important;
+    }
+    
+    #search input.button, #formSearch > div:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
+        display: none !important;
+    }
+    
+    #loader {
+        background: no-repeat url(https://i.imgur.com/tL0UxQO.png) center !important;
+        height: 75px !important;
+        width: 75px !important;
+        margin: 50px 100px 250px 50px !important;
+        opacity: 0.5 !important;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #switch {
+        position: absolute !important;
+        top: 219px !important;
+        right:400px !important;
+        z-index:999 !important;
+        color: var(--primary-color) !important;
+    }
+    
+    
+/* VIDEO PLAYERS */
+    
+    .vjs-play-progress, .vjs-volume-level {
+        background: linear-gradient(315deg, #B648FF, #5CD1F7) !important;
+    }
+    .vjs-progress-control vjs-control {
+        height: 30px !important;
+    }
+    
 }
