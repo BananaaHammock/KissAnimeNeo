@@ -280,5 +280,8 @@ domain("kissmanga.com") {
     .vjs-control-bar {
         background: var(--background2) !important;
     }
+    .vjs-load-progress {
+        background: var(--text) !important;
+    }
     
 }

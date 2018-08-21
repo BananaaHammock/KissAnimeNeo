@@ -1,5 +1,7 @@
 # KissNeo
 
+<img src="preview.png" width="100%">
+
 Preview of <i>Kissneo</i>.
 
 About
