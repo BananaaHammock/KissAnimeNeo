@@ -209,6 +209,7 @@ domain("kissmanga.com") {
 	.bigBarContainer {
 		background: transparent;
         border: 0px !important;
+        text-align: center !important;
     }
     
     div[style*="width: 970px; text-align: center; margin: auto"] {
@@ -216,7 +217,22 @@ domain("kissmanga.com") {
         border-color: transparent !important;
         margin: 80px 0px 5px 0px !important;
         width: 100% !important;
+        text-align: center !important;
     }
+    
+    
+    .barContent > div > div:nth-of-type(8) {
+        display: none !important;
+    }
+    
+    
+    #btnShowComments {
+        background: var(--background2) !important;
+        border: 0px !important;
+    }
+    
+    
+    
     
     
     
@@ -241,6 +257,7 @@ domain("kissmanga.com") {
         border-top: 10px var(--background2) solid !important;
         border-left: 10px var(--background2) solid !important;
         border-right: 10px var(--background2) solid !important;
+        margin: -80px 0px 0px 0px !important;
     }
     
     #switch {
